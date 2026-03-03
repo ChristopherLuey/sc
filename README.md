@@ -3,17 +3,17 @@
 TUI for managing Slurm jobs on the Stanford SC cluster.
 
 ### Jobs
-View and manage running jobs across all users, with filtering and cancellation support.
+View and manage running jobs with filtering and cancellation support (squeue).
 
 ![Jobs View](.github/show_jobs.png)
 
 ### Submit
-Configure and submit new Slurm jobs with preset cycling for common options.
+Configure and submit new Slurm jobs with preset cycling for common options (srun).
 
 ![Submit Job](.github/create_job.png)
 
 ### Remote File Browser
-Browse the cluster filesystem to select scripts for submission.
+Browse the cluster filesystem to select scripts for submission (cd, ls).
 
 ![File Browser](.github/select_script.png)
 

@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/christopherluey/clustertui/internal/config"
-	"github.com/christopherluey/clustertui/internal/slurm"
-	"github.com/christopherluey/clustertui/internal/ssh"
+	"github.com/christopherluey/sc/internal/config"
+	"github.com/christopherluey/sc/internal/slurm"
+	"github.com/christopherluey/sc/internal/ssh"
 )
 
 type Service struct {

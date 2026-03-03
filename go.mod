@@ -1,4 +1,4 @@
-module github.com/christopherluey/clustertui
+module github.com/christopherluey/sc
 
 go 1.24.2
 

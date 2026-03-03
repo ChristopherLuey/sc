@@ -4,9 +4,9 @@ import (
 	"time"
 
 	tea "charm.land/bubbletea/v2"
-	"github.com/christopherluey/clustertui/internal/cluster"
-	"github.com/christopherluey/clustertui/internal/slurm"
-	"github.com/christopherluey/clustertui/internal/tui/views/submit"
+	"github.com/christopherluey/sc/internal/cluster"
+	"github.com/christopherluey/sc/internal/slurm"
+	"github.com/christopherluey/sc/internal/tui/views/submit"
 )
 
 func connectCmd(svc *cluster.Service) tea.Cmd {

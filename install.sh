@@ -1,7 +1,7 @@
 #!/bin/sh
 set -e
 
-REPO="christopherluey/clustertui"
+REPO="christopherluey/sc"
 INSTALL_DIR="${INSTALL_DIR:-$HOME/.local/bin}"
 
 # Detect OS
@@ -27,10 +27,10 @@ if [ -z "$VERSION" ]; then
     exit 1
 fi
 
-FILENAME="clustertui_${VERSION#v}_${OS}_${ARCH}.tar.gz"
+FILENAME="sc_${VERSION#v}_${OS}_${ARCH}.tar.gz"
 URL="https://github.com/${REPO}/releases/download/${VERSION}/${FILENAME}"
 
-echo "Downloading ClusterTUI ${VERSION} for ${OS}/${ARCH}..."
+echo "Downloading sc ${VERSION} for ${OS}/${ARCH}..."
 
 TMPDIR=$(mktemp -d)
 trap 'rm -rf "$TMPDIR"' EXIT
@@ -39,10 +39,10 @@ curl -sSfL "$URL" -o "$TMPDIR/$FILENAME"
 tar -xzf "$TMPDIR/$FILENAME" -C "$TMPDIR"
 
 mkdir -p "$INSTALL_DIR"
-mv "$TMPDIR/clustertui" "$INSTALL_DIR/clustertui"
-chmod +x "$INSTALL_DIR/clustertui"
+mv "$TMPDIR/sc" "$INSTALL_DIR/sc"
+chmod +x "$INSTALL_DIR/sc"
 
-echo "Installed clustertui to $INSTALL_DIR/clustertui"
+echo "Installed sc to $INSTALL_DIR/sc"
 
 if ! echo "$PATH" | grep -q "$INSTALL_DIR"; then
     echo ""

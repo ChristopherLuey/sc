@@ -1,24 +1,46 @@
-# ClusterTUI
+# sc — Stanford Compute Cluster TUI
 
 TUI for managing Slurm jobs on the Stanford SC cluster.
+
+## Screenshots
+
+### Jobs
+View and manage running jobs across all users, with filtering and cancellation support.
+
+![Jobs View](.github/show_jobs.png)
+
+### Submit
+Configure and submit new Slurm jobs with preset cycling for common options.
+
+![Submit Job](.github/create_job.png)
+
+### Remote File Browser
+Browse the cluster filesystem to select scripts for submission.
+
+![File Browser](.github/select_script.png)
+
+### Setup
+First-run configuration wizard for SSH connection details.
+
+![Setup](.github/config.png)
 
 ## Install
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/christopherluey/clustertui/main/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/christopherluey/sc/main/install.sh | sh
 ```
 
 Or build from source (requires Go 1.24+):
 
 ```bash
-git clone https://github.com/christopherluey/clustertui.git
-cd clustertui
+git clone https://github.com/christopherluey/sc.git
+cd sc
 make build
 ```
 
 ## Prerequisites
 
-ClusterTUI connects to the cluster over SSH with key-based authentication. Password auth is not supported.
+`sc` connects to the cluster over SSH with key-based authentication. Password auth is not supported.
 
 ### Set up SSH keys
 
@@ -40,15 +62,15 @@ You must be on the Stanford network or connected via VPN to reach `sc.stanford.e
 ## Usage
 
 ```bash
-clustertui
+sc
 ```
 
-On first run, you'll be prompted to configure your SSH connection. Settings are saved to `~/.config/clustertui/config.toml`.
+On first run, you'll be prompted to configure your SSH connection. Settings are saved to `~/.config/sc/config.toml`.
 
 You can also pass flags directly:
 
 ```bash
-clustertui --host sc.stanford.edu --user SUID
+sc --host sc.stanford.edu --user SUID
 ```
 
 ## Keybindings

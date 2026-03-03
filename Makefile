@@ -1,6 +1,6 @@
-BINARY := clustertui
+BINARY := sc
 VERSION ?= dev
-LDFLAGS := -ldflags "-s -w -X github.com/christopherluey/clustertui/cmd.Version=$(VERSION)"
+LDFLAGS := -ldflags "-s -w -X github.com/christopherluey/sc/cmd.Version=$(VERSION)"
 
 .PHONY: build run clean lint tidy
 

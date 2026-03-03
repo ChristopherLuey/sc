@@ -1,6 +1,6 @@
 package tui
 
-import "github.com/christopherluey/clustertui/internal/slurm"
+import "github.com/christopherluey/sc/internal/slurm"
 
 type ConnectedMsg struct{}
 

@@ -1,6 +1,6 @@
 package main
 
-import "github.com/christopherluey/clustertui/cmd"
+import "github.com/christopherluey/sc/cmd"
 
 func main() {
 	cmd.Execute()

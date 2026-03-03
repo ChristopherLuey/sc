@@ -8,12 +8,12 @@ import (
 	"charm.land/bubbles/v2/textinput"
 	tea "charm.land/bubbletea/v2"
 	"charm.land/lipgloss/v2"
-	"github.com/christopherluey/clustertui/internal/cluster"
-	"github.com/christopherluey/clustertui/internal/config"
-	"github.com/christopherluey/clustertui/internal/tui/components"
-	"github.com/christopherluey/clustertui/internal/tui/views/jobs"
-	"github.com/christopherluey/clustertui/internal/tui/views/nodes"
-	"github.com/christopherluey/clustertui/internal/tui/views/submit"
+	"github.com/christopherluey/sc/internal/cluster"
+	"github.com/christopherluey/sc/internal/config"
+	"github.com/christopherluey/sc/internal/tui/components"
+	"github.com/christopherluey/sc/internal/tui/views/jobs"
+	"github.com/christopherluey/sc/internal/tui/views/nodes"
+	"github.com/christopherluey/sc/internal/tui/views/submit"
 )
 
 const (
@@ -413,7 +413,7 @@ func (a *App) viewSetup() string {
 	title := lipgloss.NewStyle().
 		Bold(true).
 		Foreground(lipgloss.Color("#7C3AED")).
-		Render("ClusterTUI Setup")
+		Render("SC Setup")
 
 	subtitle := lipgloss.NewStyle().
 		Foreground(lipgloss.Color("#9CA3AF")).

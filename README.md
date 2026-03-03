@@ -20,7 +20,7 @@ Browse the cluster filesystem to select scripts for submission.
 ## Install
 
 ```bash
-curl -sSfL https://raw.githubusercontent.com/christopherluey/sc/main/install.sh | sh
+curl -sSfL https://raw.githubusercontent.com/christopherluey/sc/master/install.sh | sh
 ```
 
 Or build from source (requires Go 1.24+):

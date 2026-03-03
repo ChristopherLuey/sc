@@ -19,11 +19,6 @@ Browse the cluster filesystem to select scripts for submission.
 
 ![File Browser](.github/select_script.png)
 
-### Setup
-First-run configuration wizard for SSH connection details.
-
-![Setup](.github/config.png)
-
 ## Install
 
 ```bash
@@ -66,6 +61,11 @@ sc
 ```
 
 On first run, you'll be prompted to configure your SSH connection. Settings are saved to `~/.config/sc/config.toml`.
+
+### Setup
+First-run configuration wizard for SSH connection details.
+
+![Setup](.github/config.png)
 
 You can also pass flags directly:
 

@@ -2,8 +2,6 @@
 
 TUI for managing Slurm jobs on the Stanford SC cluster.
 
-## Screenshots
-
 ### Jobs
 View and manage running jobs across all users, with filtering and cancellation support.
 

@@ -1,0 +1,22 @@
+version: 2
+
+builds:
+  - main: .
+    binary: clustertui
+    ldflags:
+      - -s -w -X github.com/christopherluey/clustertui/cmd.Version={{.Version}}
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
+
+archives:
+  - format: tar.gz
+    name_template: "clustertui_{{ .Version }}_{{ .Os }}_{{ .Arch }}"
+
+release:
+  github:
+    owner: christopherluey
+    name: clustertui
